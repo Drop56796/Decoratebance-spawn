@@ -5,6 +5,7 @@ local cue2 = Instance.new("Sound")
 	cue2.Volume = 2.5
 	cue2.PlaybackSpeed = 0.60001
 	cue2:Play()
+wait(8)
 
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
 
@@ -98,7 +99,7 @@ entity:SetCallback("OnRebounding", function(startOfRebound)
 end)
 
 entity:SetCallback("OnDespawning", function()
-    game.Players.LocalPlayer.Character.Humanoid.Health > 1
+    game.Players.LocalPlayer.Character.Humanoid.Health = 100
     wait(2)
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
