@@ -99,7 +99,7 @@ entity:SetCallback("OnRebounding", function(startOfRebound)
 end)
 
 entity:SetCallback("OnDespawning", function()
-    game.Players.LocalPlayer.Character.Humanoid.Health = 100
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Drop56796/Despawner/main/Despawn.lua"))()
     wait(2)
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
